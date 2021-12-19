@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_a63941fc6f0d46678f537b09e9326c9b/.metadata/.plugins/org.eclipse.jdt.core
+758934082.index
+3842426239.index

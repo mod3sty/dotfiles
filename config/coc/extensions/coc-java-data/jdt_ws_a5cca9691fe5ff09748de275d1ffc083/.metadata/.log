@@ -1,0 +1,4367 @@
+!SESSION 2021-11-17 17:38:19.174 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_a5cca9691fe5ff09748de275d1ffc083
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.394
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.574
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.594
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.598
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.614
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.614
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.631
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.651
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:20.724
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2021-11-17 17:38:21.123
+!MESSAGE Failed to read package name from file:/home/mod3sty/Scripts/sandbox/ishaanArrays/ArrayDiags.java
+!STACK 0
+java.io.FileNotFoundException: /home/mod3sty/Scripts/sandbox/ishaanArrays/ArrayDiags.java (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:130)
+	at com.google.common.io.Files$FileByteSource.read(Files.java:154)
+	at com.google.common.io.ByteSource$AsCharSource.read(ByteSource.java:470)
+	at com.google.common.io.Files.toString(Files.java:254)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.getPackageName(JDTUtils.java:291)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:195)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:173)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:163)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.loadInvisibleProject(InvisibleProjectImporter.java:104)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.importToWorkspace(InvisibleProjectImporter.java:87)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:115)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:104)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:195)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.125
+!MESSAGE Try to create an invisible project for the workspace /home/mod3sty/Scripts/sandbox/ishaanArrays
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.125
+!MESSAGE Creating the Java project ishaanArrays_487ee742
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.139
+!MESSAGE Finished creating the Java project ishaanArrays_487ee742
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.153
+!MESSAGE Successfully created a workspace invisible project ishaanArrays_487ee742
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.160
+!MESSAGE Workspace initialized in 543ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.236
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.242
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.249
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.250
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.441
+!MESSAGE Reconciled 0. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.778
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.778
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.782
+!MESSAGE Validated 1. Took 332 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.794
+!MESSAGE >> Updating classpath for project ishaanArrays_487ee742
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.810
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.815
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.817
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:21.818
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:22.003
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:22.017
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:22.430
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:22.930
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:22.931
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:22.931
+!MESSAGE Validated 1. Took 51 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:23.375
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:23.830
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:24.286
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:24.287
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:24.287
+!MESSAGE Validated 1. Took 56 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:29.246
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:29.701
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:30.170
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:30.170
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:30.171
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:35.648
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:36.117
+!MESSAGE Reconciled 0. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:36.576
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:36.576
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:36.577
+!MESSAGE Validated 1. Took 58 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:40.170
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:40.577
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:41.060
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:41.060
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:41.061
+!MESSAGE Validated 1. Took 32 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:43.896
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:44.352
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:44.831
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:44.831
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:44.831
+!MESSAGE Validated 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:48.181
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:48.637
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:49.068
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:49.069
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:49.069
+!MESSAGE Validated 1. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:49.157
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:49.162
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:49.595
+!MESSAGE Reconciled 0. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:50.093
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:50.094
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:50.094
+!MESSAGE Validated 1. Took 49 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:50.344
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:50.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:50.784
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:51.201
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:51.201
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:51.201
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:52.558
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:53.011
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:53.194
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:53.497
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:53.901
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:54.368
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:54.368
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:54.369
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:54.495
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:54.899
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:55.366
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:55.366
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:55.367
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:56.169
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:56.511
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:56.513
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:56.514
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:56.915
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:57.389
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:57.389
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:57.390
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:57.881
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:58.285
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:58.757
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:58.757
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:58.757
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:58.973
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:59.377
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:38:59.804
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:00.089
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:00.091
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:00.093
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:00.508
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:00.511
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:00.513
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:00.817
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:01.221
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:01.649
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:02.102
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:02.523
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:02.524
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:02.524
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:02.874
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:03.279
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:03.699
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:03.699
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:03.700
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:03.713
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:03.715
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:03.717
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:04.117
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:04.532
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:04.532
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:04.532
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:05.585
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:05.988
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:06.401
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:06.402
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:06.402
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:06.512
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:06.857
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:06.860
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:06.862
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:07.310
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:07.735
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:07.735
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:07.736
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:07.928
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:07.929
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:07.930
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:08.381
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:08.844
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:08.844
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:08.844
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:08.927
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:09.233
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:09.235
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:09.236
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:09.636
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:10.048
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:10.048
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:10.048
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:10.803
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:11.205
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:11.672
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:11.672
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:11.672
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:13.044
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:13.497
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:13.963
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:13.963
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:13.963
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:24.951
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:24.954
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:24.971
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:25.404
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:25.436
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:25.437
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:25.441
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:25.594
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:25.596
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:25.599
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:26.047
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:26.512
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:26.513
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:26.513
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:28.423
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:28.642
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:28.647
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.095
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.118
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.142
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.578
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.921
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.999
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.999
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:29.999
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:30.100
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:30.553
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:31.019
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:31.019
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:31.019
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:38.289
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:38.693
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:39.106
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:39.107
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:39.107
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:39.999
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:40.402
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:40.471
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:40.875
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:41.286
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:41.286
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:41.287
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:41.984
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:41.986
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:41.993
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:42.401
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:42.403
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:42.405
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:42.761
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:42.762
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:43.157
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:43.217
+!MESSAGE Reconciled 0. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:43.510
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:43.915
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:44.381
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:44.381
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:39:44.381
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:09.433
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:09.887
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:10.351
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:10.351
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:10.351
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:12.820
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:13.273
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:13.630
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:14.082
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:14.418
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:14.871
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:15.332
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:15.332
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:15.333
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:30.799
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:31.251
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:31.710
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:31.710
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:31.711
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.107
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.109
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.111
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.288
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.289
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.292
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.740
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:32.812
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.176
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.177
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.179
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.334
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.335
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.337
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.436
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.438
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.787
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.873
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.874
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:33.876
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:34.326
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:34.783
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:34.784
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:34.784
+!MESSAGE Validated 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:34.852
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:34.853
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:34.854
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:35.304
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:35.381
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:35.382
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:35.584
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:35.784
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:36.193
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:36.193
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:36.193
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:36.267
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:36.669
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.077
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.078
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.087
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.212
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.543
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.544
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.592
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.593
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.602
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:37.946
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:38.010
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:38.413
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:38.450
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:38.798
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:39.251
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:39.670
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:39.670
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:39.670
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:42.577
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:43.030
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:43.443
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:43.443
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:43.443
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:43.681
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:44.134
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:44.549
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:44.549
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:44.550
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:45.159
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:45.160
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:45.164
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:45.612
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:45.649
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:46.035
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:46.036
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:46.040
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:46.181
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:46.182
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:46.184
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:46.583
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:47.041
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:47.041
+!MESSAGE 4 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:47.041
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:47.505
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:47.907
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:48.271
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:48.723
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:49.133
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:49.134
+!MESSAGE 4 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:49.134
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:49.996
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:49.996
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:50.005
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:50.448
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:50.836
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:50.892
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:50.946
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:51.238
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:51.640
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:52.048
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:52.049
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:52.049
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:54.025
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:54.026
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:54.039
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:54.429
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:54.538
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:54.593
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:54.996
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:55.415
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:55.415
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:55.415
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:55.436
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:55.889
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:56.352
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:56.352
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:56.352
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:57.462
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:57.915
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:58.326
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:58.326
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:41:58.326
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:03.092
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:03.093
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:03.267
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:03.495
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:03.957
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:03.958
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:03.967
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:04.043
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:04.431
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:04.733
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:05.185
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:05.646
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:05.646
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:05.646
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:06.309
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:06.310
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:06.347
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:06.762
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:06.936
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:07.079
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:07.082
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:07.485
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:07.947
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:07.947
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:07.947
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:16.535
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:16.537
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:16.987
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:17.010
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:17.411
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:17.411
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:17.411
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:18.602
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:19.054
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:19.466
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:19.466
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:19.466
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:21.001
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:21.003
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:21.008
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:21.260
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:21.261
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:21.264
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:21.712
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:22.163
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:22.164
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:22.164
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:22.954
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:23.407
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:23.730
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.131
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.538
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.538
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.538
+!MESSAGE Validated 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.655
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.657
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.659
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:24.932
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:25.334
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:25.791
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:25.791
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:25.792
+!MESSAGE Validated 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:28.143
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:28.144
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:28.186
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:28.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:28.867
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:29.300
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:29.300
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:29.300
+!MESSAGE Validated 1. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:31.032
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:31.484
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:31.896
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:31.896
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:31.896
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:32.359
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:32.762
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:33.193
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:33.194
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:33.194
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:34.361
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:34.764
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:35.178
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:35.178
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:35.178
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:36.694
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:36.695
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:36.762
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:36.820
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:36.821
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:36.833
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:37.223
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:37.401
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:37.411
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:37.568
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:38.020
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:38.480
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:38.480
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:38.481
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:45.873
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:46.275
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:46.686
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:46.688
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:46.691
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:46.843
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:46.844
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:46.847
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:47.246
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:47.707
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:47.707
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:47.707
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:47.777
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:47.778
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:47.781
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.147
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.148
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.151
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.373
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.375
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.378
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.825
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.833
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.835
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.836
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.839
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.936
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.938
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:48.941
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:49.390
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:49.531
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:49.532
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:49.533
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:49.794
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:50.246
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:50.706
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:50.706
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:50.706
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:51.624
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:51.628
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:51.698
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:51.771
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:51.773
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:51.783
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:52.183
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:52.191
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:52.282
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:52.685
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:53.145
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:53.146
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:53.146
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:54.163
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:54.614
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:54.657
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:55.110
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:55.157
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:55.158
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:55.472
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:55.609
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:55.885
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:56.336
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:56.457
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:56.755
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:56.756
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:56.836
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:57.207
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:57.235
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:57.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:57.831
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:58.292
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:58.292
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:58.292
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:59.398
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:59.399
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:59.403
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:42:59.850
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:00.309
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:00.309
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:00.310
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:00.497
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:00.888
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:01.340
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:01.798
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:01.798
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:01.798
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:02.706
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:02.707
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:02.735
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:02.938
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:03.158
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:03.229
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:03.631
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:04.090
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:04.090
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:04.091
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:06.096
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:06.097
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:06.164
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:06.490
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:06.943
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:07.371
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:07.371
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:07.372
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:08.746
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:08.748
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:08.903
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:09.149
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:09.249
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:09.701
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:10.162
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:10.163
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:10.163
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:14.299
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:14.752
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:15.163
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:15.163
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:15.197
+!MESSAGE Validated 1. Took 44 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:16.983
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:16.984
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:17.065
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:17.103
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:17.381
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:17.784
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:17.945
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:18.219
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:18.220
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:18.534
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:18.671
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:18.831
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:19.283
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:19.743
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:19.744
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:19.744
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:22.051
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:22.455
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:22.608
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:22.609
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:22.613
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:22.710
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:22.713
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:23.011
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:23.472
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:23.472
+!MESSAGE 4 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:23.472
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:24.426
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:24.878
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:25.313
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:25.314
+!MESSAGE 5 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:25.314
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:26.229
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:26.230
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:26.266
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:26.632
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:27.092
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:27.093
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:27.093
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:27.895
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:27.896
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:27.933
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:28.347
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:28.758
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:28.758
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:28.758
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:29.594
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:29.595
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:29.641
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:29.915
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:30.367
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:30.776
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:30.776
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:30.776
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:31.648
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:31.968
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:31.969
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:32.005
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:32.420
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:32.879
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:32.880
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:32.880
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:35.181
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:35.481
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:35.933
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:36.394
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:36.395
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:36.395
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:37.904
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:38.306
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:38.766
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:38.766
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:38.766
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:39.245
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:39.648
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:40.059
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:40.059
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:40.059
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:42.122
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:42.575
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:42.947
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:42.948
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:43.400
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:43.521
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:43.646
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:43.647
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:43.684
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:44.050
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:44.092
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:44.225
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:44.227
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:44.630
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:44.812
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:45.179
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:45.582
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:46.043
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:46.043
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:43:46.043
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:08.151
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:08.154
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2021-11-17 17:44:08.157
+!MESSAGE Error while handling document save. URI: file:///home/mod3sty/Scripts/sandbox/ishaanArrays/ArrayDiags.java
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] ArrayDiags.java [in <default> [in _ [in ishaanArrays_487ee742]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.Openable.getUnderlyingResource(Openable.java:358)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getUnderlyingResource(CompilationUnit.java:979)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleSaved(BaseDocumentLifeCycleHandler.java:468)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$7.run(BaseDocumentLifeCycleHandler.java:316)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didSave(BaseDocumentLifeCycleHandler.java:313)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didSave(JDTLanguageServer.java:769)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:123)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-11-17 17:44:08.163
+!MESSAGE [Working copy] ArrayDiags.java [in <default> [in _ [in ishaanArrays_487ee742]]] does not exist
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:08.164
+!MESSAGE >> document/didClose
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:08.183
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:08.183
+!MESSAGE 0 problems reported for /ArrayDiags.java
+!SESSION 2021-11-17 17:44:16.771 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_a5cca9691fe5ff09748de275d1ffc083
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-11-17 17:44:17.423
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:17.751
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:17.883
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:17.906
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:17.911
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:17.930
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:17.930
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:17.949
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.379
+!MESSAGE Workspace initialized in 446ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.454
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.458
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.464
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.465
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.688
+!MESSAGE >> Updating classpath for project ishaanArrays_487ee742
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.695
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.817
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.817
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.820
+!MESSAGE Validated 1. Took 116 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.848
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.851
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.853
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:18.855
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:19.284
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:22.413
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:22.807
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:22.812
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:22.827
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:23.261
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:23.736
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:23.736
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:23.736
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:23.900
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:23.904
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 17:44:23.919
+!MESSAGE >> document/didClose
+!SESSION 2021-11-17 18:04:51.626 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_a5cca9691fe5ff09748de275d1ffc083
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-11-17 18:04:52.530
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:52.977
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:53.197
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:53.228
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:53.237
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:53.260
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:53.260
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:53.286
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.020
+!MESSAGE Workspace initialized in 755ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.089
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.103
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.112
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.115
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.302
+!MESSAGE >> Updating classpath for project ishaanArrays_487ee742
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.378
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.539
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.539
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.542
+!MESSAGE Validated 1. Took 154 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.557
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.562
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.565
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.567
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:04:54.803
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:39.849
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:40.261
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:40.748
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:40.748
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:40.755
+!MESSAGE Validated 1. Took 37 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:41.627
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:41.634
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:41.683
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:41.907
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:41.910
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:41.921
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:42.055
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:42.058
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:42.067
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:42.521
+!MESSAGE Reconciled 0. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:42.761
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:42.764
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:42.768
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:43.171
+!MESSAGE Reconciled 0. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:43.376
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:43.548
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:43.552
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:43.967
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:44.434
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:44.435
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:44.436
+!MESSAGE Validated 1. Took 68 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:44.658
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:44.697
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:44.715
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:44.717
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:45.146
+!MESSAGE Reconciled 0. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:45.433
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:45.839
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:46.276
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:46.276
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:46.277
+!MESSAGE Validated 1. Took 37 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:47.641
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:47.644
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:47.646
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:48.097
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:48.446
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:48.852
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:49.316
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:49.317
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:49.317
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:49.570
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:49.974
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:50.397
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:50.397
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:50.398
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:50.740
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:51.194
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:51.202
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:51.610
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:51.612
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:51.770
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.023
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.065
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.191
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.596
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.708
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.958
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.961
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:52.963
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:53.375
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:53.797
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:53.798
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:53.798
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:54.501
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:54.503
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:54.504
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:54.906
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:55.376
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:55.377
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:55.377
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:55.520
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:55.973
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:56.445
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:56.445
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:56.445
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:56.769
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:56.770
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:57.223
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:57.434
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:57.641
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:57.641
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:57.641
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:57.688
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:58.082
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:58.535
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:58.772
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:59.074
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:59.476
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:59.888
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:59.888
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:05:59.888
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:02.873
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:03.276
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:03.405
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:03.810
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:03.957
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:03.958
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:03.960
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:04.363
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:04.831
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:04.831
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:04.831
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:05.032
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:05.486
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:05.910
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:05.910
+!MESSAGE 7 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:05.910
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:09.558
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:09.560
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:10.014
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:10.023
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:10.033
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:10.487
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:10.812
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:11.043
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:11.044
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:11.323
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:11.496
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:11.587
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:11.990
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:12.016
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:12.468
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:12.930
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:12.930
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:12.931
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:31.576
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:32.029
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:32.445
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:32.445
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:32.446
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:38.068
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:38.472
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:38.889
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:38.889
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:38.890
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:43.457
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:43.759
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:44.212
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:44.674
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:44.674
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:44.674
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:45.425
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:45.426
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:45.806
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:45.829
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:46.017
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:46.470
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:46.934
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:46.934
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:46.934
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:48.531
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:48.534
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:48.984
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:49.164
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:49.234
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:49.654
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:49.657
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:49.663
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:50.057
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:50.059
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:50.063
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:50.067
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:50.415
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:50.819
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:51.284
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:51.285
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:51.285
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:51.631
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:52.035
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:52.451
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:52.451
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:52.451
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:52.520
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:52.973
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:53.026
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:53.479
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:53.937
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:53.937
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:06:53.938
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:00.713
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:00.716
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:01.075
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:01.166
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:01.576
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:01.584
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:01.584
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:01.584
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:01.988
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:02.456
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:02.456
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:02.456
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:03.007
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:03.009
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:03.073
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:03.461
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:03.847
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:04.250
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:04.665
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:04.665
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:04.665
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:05.559
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:06.011
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:06.475
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:06.475
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:06.475
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:36.039
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:36.041
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:36.049
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:36.442
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:36.510
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:36.963
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:37.427
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:37.428
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:37.428
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:38.716
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:38.718
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:38.726
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:39.119
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:39.276
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:39.679
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:40.093
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:40.093
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:40.094
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:41.581
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:41.984
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:42.398
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:42.399
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:42.399
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:42.959
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:42.961
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:43.401
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:43.415
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:43.486
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:43.488
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:43.575
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:43.890
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:43.923
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:44.326
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:44.375
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:44.377
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:44.731
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:44.779
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:44.788
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:45.191
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:45.295
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:45.698
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:46.163
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:46.163
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:46.163
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:47.713
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:48.116
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:48.210
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:48.663
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:49.106
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:49.106
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:49.107
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:51.698
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:51.700
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:51.976
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:52.151
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:52.565
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:52.565
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:52.565
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:52.859
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:52.861
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:53.176
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:53.262
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:53.360
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:53.763
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:54.013
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:54.416
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:54.880
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:54.880
+!MESSAGE 7 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:54.880
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:56.877
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:56.878
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:57.146
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:57.330
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:57.747
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:57.748
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:07:57.748
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:01.135
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:01.539
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:02.005
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:02.005
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:02.006
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:02.070
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:02.430
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:02.882
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:03.343
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:03.343
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:03.343
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:03.416
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:03.868
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:04.340
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:04.340
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:04.341
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:05.510
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:05.674
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:05.675
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:06.126
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:06.248
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:06.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:06.731
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:07.196
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:07.197
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:07.197
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:07.435
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:07.594
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:07.727
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:07.731
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:08.185
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:08.327
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:08.329
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:08.364
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:08.730
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.193
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.193
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.194
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.245
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.398
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.399
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.462
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:09.776
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:10.182
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:10.439
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:10.892
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:11.307
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:11.308
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:11.308
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:11.688
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:12.091
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:12.463
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:12.915
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:13.380
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:13.380
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:13.381
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:29.184
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:29.637
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:29.728
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:29.729
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:30.132
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:30.254
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:30.334
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:30.336
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:30.339
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:30.739
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:31.073
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:31.475
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:31.839
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:32.293
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:32.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:32.782
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:32.896
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:33.171
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:33.174
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:33.411
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:33.574
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.038
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.039
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.039
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.273
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.274
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.277
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.677
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:34.966
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:35.419
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:35.833
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:35.833
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:35.833
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:36.012
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:36.197
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:36.198
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:36.202
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:36.625
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:36.626
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:36.627
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:37.027
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:37.042
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:37.043
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:37.305
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:37.445
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:37.589
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:38.041
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:38.505
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:38.505
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:38.505
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:46.588
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:46.892
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.120
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.121
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.123
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.572
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.774
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.775
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.775
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.864
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.866
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:47.867
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:48.317
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:48.753
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:48.753
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:48.753
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:49.270
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:49.271
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:49.445
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:49.723
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:49.987
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:50.389
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:50.847
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:50.847
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:50.847
+!MESSAGE Validated 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:55.381
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:55.382
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:55.459
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:55.833
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:56.177
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:56.300
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:56.300
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:56.300
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:56.343
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:56.796
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:57.265
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:57.265
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:57.265
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:57.390
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:57.793
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:58.258
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:58.258
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:08:58.259
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:01.390
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:01.391
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:01.436
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:01.842
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:02.019
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:02.020
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:02.348
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:02.422
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:02.713
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:03.116
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:03.399
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:03.802
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:03.815
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:04.267
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:04.416
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:04.719
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:05.121
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:05.558
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:05.558
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:05.558
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:06.193
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:06.194
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:06.464
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:06.645
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:07.077
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:07.487
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:07.488
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:07.879
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:07.939
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:08.023
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:08.476
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:08.940
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:08.940
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:08.941
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:09.916
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:09.918
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:10.233
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:10.320
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:10.655
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:11.059
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:11.522
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:11.522
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:11.522
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:11.874
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:11.879
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:11.924
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:12.220
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:12.622
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:12.894
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:13.347
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:13.811
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:13.811
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:13.811
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:23.291
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:23.743
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:24.127
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:24.128
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:24.442
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:24.494
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:24.897
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:25.312
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:25.312
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:25.312
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:55.925
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:55.926
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:56.254
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:56.309
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:56.762
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:57.176
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:57.176
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:57.176
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:57.642
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:58.079
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:58.493
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:58.494
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:58.494
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:58.633
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:59.037
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:59.489
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:09:59.588
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:00.040
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:00.335
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:00.337
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:00.656
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:00.735
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:00.737
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:01.022
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:01.183
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:01.184
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:01.637
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:02.096
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:02.096
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:02.096
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:02.549
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:02.550
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:02.568
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:03.001
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:03.460
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:03.460
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:03.460
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:04.196
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:04.648
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:04.818
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:05.270
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:05.679
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:05.679
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:05.688
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:07.697
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:08.100
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:08.563
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:08.563
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:08.564
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:09.159
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:09.558
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:09.559
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:09.592
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:09.846
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.001
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.003
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.005
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.457
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.925
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.925
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.926
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.998
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:10.999
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:11.038
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:11.401
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:11.864
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:11.864
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:11.864
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:22.784
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:22.785
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:22.788
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:23.116
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:23.568
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:23.995
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:23.995
+!MESSAGE 4 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:23.995
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:24.675
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:24.676
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:24.711
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:25.088
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:25.548
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:25.548
+!MESSAGE 3 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:25.549
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:26.498
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:26.499
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:26.574
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:26.900
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:27.025
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:27.026
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:27.071
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:27.289
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:27.692
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:28.152
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:28.152
+!MESSAGE 2 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:28.152
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:29.316
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:29.769
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:29.793
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:29.794
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:29.856
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:30.196
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:30.393
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:30.846
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:31.305
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:31.305
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:31.305
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:31.828
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:31.830
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:31.874
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:32.126
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:32.547
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:33.009
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:33.009
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:33.009
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:34.732
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:34.742
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:34.755
+!MESSAGE >> document/didClose
+!SESSION 2021-11-17 18:10:56.401 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_a5cca9691fe5ff09748de275d1ffc083
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-11-17 18:10:56.945
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.193
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.339
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.357
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.361
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.375
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.376
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.393
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.784
+!MESSAGE Workspace initialized in 406ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.797
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.806
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.812
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:57.815
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.013
+!MESSAGE >> Updating classpath for project ishaanArrays_487ee742
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.021
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.118
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.118
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.120
+!MESSAGE Validated 1. Took 90 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.143
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.146
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.148
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.149
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:10:58.687
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:49.912
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:50.376
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:50.448
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:50.855
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:51.354
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:51.354
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:51.355
+!MESSAGE Validated 1. Took 50 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:58.717
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:59.126
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:59.632
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:59.632
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:11:59.633
+!MESSAGE Validated 1. Took 56 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:07.399
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:07.406
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:07.854
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:08.339
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:08.340
+!MESSAGE 1 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:08.340
+!MESSAGE Validated 1. Took 36 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:08.889
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:08.948
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:08.968
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:08.972
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:09.324
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:09.730
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:10.209
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:10.209
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:10.209
+!MESSAGE Validated 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:11.007
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:12:11.012
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:31.486
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:31.488
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:31.545
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:31.941
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:31.954
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:32.148
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:32.409
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:32.426
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:32.880
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:32.937
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:32.939
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:32.943
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:33.391
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:33.611
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:33.614
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:33.696
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:33.898
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:34.352
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:34.410
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:34.412
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:34.781
+!MESSAGE begin problem for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:34.781
+!MESSAGE 0 problems reported for /ArrayDiags.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 18:13:34.781
+!MESSAGE Validated 1. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-17 20:49:30.305
+!MESSAGE >> document/didClose

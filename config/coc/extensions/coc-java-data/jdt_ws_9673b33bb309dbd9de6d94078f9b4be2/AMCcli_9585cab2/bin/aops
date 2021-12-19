@@ -1,0 +1,22 @@
+#!/bin/bash
+
+solution() {
+	year=$1
+	contest=$2
+	levelversion=$3
+	problem=$4
+	/usr/bin/firefox "https://artofproblemsolving.com/wiki/index.php/${year}_${contest^^}_${levelversion^^}_Problems/Problem_${problem}"
+}
+
+answer() {
+	year=$1
+	contest=$2
+	levelversion=$3
+	problem=$4
+	line_number=$((430+$problem))
+	wget -O /tmp/aops "https://artofproblemsolving.com/wiki/index.php/${year}_${contest^^}_${levelversion^^}_Answer_Key";
+	sed -n ${line_number}p /tmp/aops > /tmp/aops	
+}
+
+"$@"
+

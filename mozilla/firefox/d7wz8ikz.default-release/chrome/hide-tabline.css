@@ -1,0 +1,13 @@
+/* /1* hide tabs *1/ */
+.tabbrowser-tab {
+    display: none;
+}
+
+#tabs-newtab-button {
+    display: none;
+}
+#tabbrowser-tabs, #tabbrowser-tabs arrowscrollbox { 
+	min-height: 0 !important; 
+}
+#TabsToolbar { visibility: collapse !important; }
+

@@ -1,0 +1,8 @@
+gaia.attached_device_id="739f4d38f22375575a8a52a4d746a04863537898"
+audio.play_bitrate_non_metered_migrated=true
+audio.sync_bitrate_enumeration=4
+audio.crossfade_v2=true
+audio.play_bitrate_enumeration=4
+ui.hide_hpto=true
+audio.loudness.environment=0
+app.browser.zoom-level=100

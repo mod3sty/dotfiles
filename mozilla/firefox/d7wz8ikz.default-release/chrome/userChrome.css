@@ -1,0 +1,16 @@
+@import "config.css";
+@import "variables.css";
+@import "icons/icons.css";
+@import "urlbar/urlbar.css";
+@import "navbar/navbar.css";
+/*@import "popup/popup.css";*/
+@import "interface/interface.css";
+@import "userChrome-tabline.css";
+.tabbrowser-tab[label^="New Tab"] .tab-icon-image {
+	list-style-image: none !important;
+	width: 0 !important;
+	padding-left: 16px !important;
+	background: url("/home/mod3sty/Pictures/white firefox icon.png") !important; /* your custom icon */
+	background-size: 16px 16px !important;
+	background-repeat: no-repeat !important;
+	}

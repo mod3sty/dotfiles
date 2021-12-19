@@ -1,0 +1,40 @@
+#!/bin/bash
+
+# Autostart
+$HOME/.screenlayout/dualmonitor.sh
+pgrep -x sxhkd > /dev/null || sxhkd &
+picom -b --experimental-backends &
+
+pkill latte-dock
+pkill plasmashell
+latte-dock --layout bspwm
+kstart5 plasmashell &
+
+# blue light 
+#if [[ $(pgrep redshift) == "" ]] 
+#	$HOME/Scripts/toggle-bluelight.sh 
+
+# Swallowing
+pgrep bspswallow || bspswallow &
+
+# Other stuff
+bspc config border_width         0
+bspc config window_gap           20
+bspc config -m $(cat $HOME/vars/monitorscreen) window_gap 32
+bspc config split_ratio          0.5
+bspc config border_radius 		 10
+bspc config focused_border_color \#FFFFFF
+# Workspaces
+bspc monitor $(cat $HOME/vars/laptopscreen) -d 1 2 3 4 5 
+bspc monitor $(cat $HOME/vars/monitorscreen) -d 6 7 8 9 10
+
+# polybar
+$HOME/.config/polybar/launch.sh &
+#xdo lower -n latte-dock
+#xdo lower -n plasmashell
+
+# Rules
+bspc rule -a Pavucontrol state=floating rectangle=1000x500+800+52
+bspc rule -a obs state=floating
+bspc rule -a Zathura state=tiled
+#bsp-layout set tall -- --master-size 0.5

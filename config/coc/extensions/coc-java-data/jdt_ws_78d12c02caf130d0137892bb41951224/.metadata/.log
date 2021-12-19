@@ -1,0 +1,5389 @@
+!SESSION 2021-11-22 01:48:06.137 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_78d12c02caf130d0137892bb41951224
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.482
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.657
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.676
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.681
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.696
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.696
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.713
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.731
+!MESSAGE Creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:07.799
+!MESSAGE Finished creating the Java project jdt.ls-java-project
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2021-11-22 01:48:08.192
+!MESSAGE Failed to read package name from file:/home/mod3sty/Scripts/sandbox/fathomd/countToValuesForHistogram.java
+!STACK 0
+java.io.FileNotFoundException: /home/mod3sty/Scripts/sandbox/fathomd/countToValuesForHistogram.java (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:130)
+	at com.google.common.io.Files$FileByteSource.read(Files.java:154)
+	at com.google.common.io.ByteSource$AsCharSource.read(ByteSource.java:470)
+	at com.google.common.io.Files.toString(Files.java:254)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.getPackageName(JDTUtils.java:291)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:195)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:173)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:163)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.loadInvisibleProject(InvisibleProjectImporter.java:104)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.importToWorkspace(InvisibleProjectImporter.java:87)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:115)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:104)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:195)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.195
+!MESSAGE Try to create an invisible project for the workspace /home/mod3sty/Scripts/sandbox/fathomd
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.195
+!MESSAGE Creating the Java project fathomd_d0c6dd9f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.208
+!MESSAGE Finished creating the Java project fathomd_d0c6dd9f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.224
+!MESSAGE Successfully created a workspace invisible project fathomd_d0c6dd9f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.235
+!MESSAGE Workspace initialized in 536ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.315
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.323
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.330
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.332
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.528
+!MESSAGE Reconciled 0. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.856
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.857
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.859
+!MESSAGE Validated 1. Took 322 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:08.866
+!MESSAGE >> Updating classpath for project fathomd_d0c6dd9f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:09.105
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:09.105
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:09.108
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:09.109
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:09.110
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:13.649
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:14.115
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:14.560
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:14.560
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:14.561
+!MESSAGE Validated 1. Took 45 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:15.122
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:15.587
+!MESSAGE Reconciled 0. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.044
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.045
+!MESSAGE 2 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.045
+!MESSAGE Validated 1. Took 57 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.461
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.578
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.586
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.646
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.995
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:16.997
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:17.012
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:17.421
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:17.423
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:17.882
+!MESSAGE Reconciled 0. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:18.343
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:18.344
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:18.345
+!MESSAGE Validated 1. Took 62 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:18.605
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:18.640
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:19.099
+!MESSAGE Reconciled 0. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:19.200
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:19.202
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:19.205
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:19.606
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:19.637
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:19.641
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:20.095
+!MESSAGE Reconciled 0. Took 6 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:20.320
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:20.341
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:20.512
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:20.940
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:21.423
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:21.423
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:21.424
+!MESSAGE Validated 1. Took 33 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:21.442
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:21.896
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:22.319
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:22.319
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:22.320
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:24.971
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:25.274
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:25.679
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:26.149
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:26.149
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:26.149
+!MESSAGE Validated 1. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:26.351
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:26.804
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:27.275
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:27.275
+!MESSAGE 2 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:27.275
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:27.389
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:27.391
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:27.398
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:27.724
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:28.179
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:28.480
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:28.482
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:28.488
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:28.884
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:29.347
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:29.348
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:29.348
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:30.043
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:30.045
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:30.361
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:30.446
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:30.864
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:30.864
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:30.865
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.167
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.169
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.218
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.357
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.536
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.697
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.699
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:31.730
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.101
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.256
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.345
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.411
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.414
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.699
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.700
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:32.735
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:33.103
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:33.179
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:33.310
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:33.314
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:33.717
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:34.093
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:34.095
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:34.503
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:34.546
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:34.752
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.205
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.225
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.612
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.613
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.766
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.802
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.804
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:35.807
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:36.184
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:36.186
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:36.187
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:36.587
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:37.056
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:37.056
+!MESSAGE 4 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:37.057
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:37.789
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.194
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.616
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.616
+!MESSAGE 4 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.617
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.646
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.829
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.832
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:38.833
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:39.283
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:39.712
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:39.713
+!MESSAGE 3 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:39.713
+!MESSAGE Validated 1. Took 29 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:40.282
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:40.287
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:40.615
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:40.687
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:41.024
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:41.026
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:41.332
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:41.428
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:41.526
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:41.929
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:41.936
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:42.238
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:42.692
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.112
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.112
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.113
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.374
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.376
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.424
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.709
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.827
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.944
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:43.947
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:44.399
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:44.873
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:44.873
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:44.874
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:45.974
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:45.977
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:46.323
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:46.377
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:46.797
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:46.797
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:46.798
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:48.065
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:48.468
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:48.941
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:48.942
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:48.942
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:53.074
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:53.078
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2021-11-22 01:48:53.081
+!MESSAGE Error while handling document save. URI: file:///home/mod3sty/Scripts/sandbox/fathomd/countToValuesForHistogram.java
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] countToValuesForHistogram.java [in <default> [in _ [in fathomd_d0c6dd9f]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.Openable.getUnderlyingResource(Openable.java:358)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getUnderlyingResource(CompilationUnit.java:979)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleSaved(BaseDocumentLifeCycleHandler.java:468)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$7.run(BaseDocumentLifeCycleHandler.java:316)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didSave(BaseDocumentLifeCycleHandler.java:313)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didSave(JDTLanguageServer.java:769)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:123)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-11-22 01:48:53.082
+!MESSAGE [Working copy] countToValuesForHistogram.java [in <default> [in _ [in fathomd_d0c6dd9f]]] does not exist
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 01:48:53.083
+!MESSAGE >> document/didClose
+!SESSION 2021-11-22 02:02:47.443 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_78d12c02caf130d0137892bb41951224
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-11-22 02:02:48.353
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:48.794
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.003
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.034
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.042
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.063
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.064
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.087
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.728
+!MESSAGE Workspace initialized in 661ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.791
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.803
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.810
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:49.813
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.028
+!MESSAGE >> Updating classpath for project fathomd_d0c6dd9f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.098
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.300
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.300
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.303
+!MESSAGE Validated 1. Took 201 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.592
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.597
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.599
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.600
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.601
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:02:50.602
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:00.768
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:00.917
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:00.926
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:01.389
+!MESSAGE Reconciled 0. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:01.919
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:01.920
+!MESSAGE 3 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:01.921
+!MESSAGE Validated 1. Took 81 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:02.145
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:02.215
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:02.219
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:02.239
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:02.566
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:02.973
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.433
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.433
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.434
+!MESSAGE Validated 1. Took 58 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.632
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.761
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.765
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.777
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.941
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.944
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:03.952
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:04.348
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:04.437
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:04.439
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:04.443
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:04.687
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:05.142
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:05.622
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:05.623
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:05.656
+!MESSAGE Validated 1. Took 64 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:06.404
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:06.407
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:06.508
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:06.860
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:07.339
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:07.340
+!MESSAGE 3 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:07.340
+!MESSAGE Validated 1. Took 30 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:07.574
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:07.578
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:07.638
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:07.983
+!MESSAGE Reconciled 0. Took 5 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:08.083
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:08.488
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:08.965
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:08.965
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:08.966
+!MESSAGE Validated 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:09.594
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:09.790
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:09.792
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:09.937
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:10.081
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:10.112
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:10.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:10.468
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:10.871
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:11.181
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:11.586
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:11.911
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:12.365
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:12.550
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:13.003
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:13.375
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:13.829
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:14.139
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:14.543
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:14.571
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:15.023
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:15.284
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:15.737
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:16.152
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:16.152
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:16.152
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:16.299
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:16.753
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:17.009
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:17.462
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:17.744
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:17.747
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:17.793
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:18.167
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:18.616
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:19.039
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:19.040
+!MESSAGE 1 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:19.040
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:24.175
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:24.580
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.055
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.055
+!MESSAGE 2 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.056
+!MESSAGE Validated 1. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.389
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.792
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.889
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.891
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:25.959
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:26.107
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:26.511
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:26.935
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:26.935
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:26.935
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:29.209
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:29.213
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:03:29.225
+!MESSAGE >> document/didClose
+!SESSION 2021-11-22 02:05:54.743 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_78d12c02caf130d0137892bb41951224
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-11-22 02:05:55.284
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:55.534
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:55.672
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:55.689
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:55.694
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:55.707
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:55.707
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:55.723
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.182
+!MESSAGE Workspace initialized in 473ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.224
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.230
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.236
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.238
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.437
+!MESSAGE >> Updating classpath for project fathomd_d0c6dd9f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.445
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.563
+!MESSAGE begin problem for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.564
+!MESSAGE 0 problems reported for /countToValuesForHistogram.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.566
+!MESSAGE Validated 1. Took 111 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.597
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.600
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.602
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:56.603
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:57.035
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:59.935
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:59.941
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:05:59.960
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:06:00.339
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:06:00.342
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:06:00.344
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:06:00.747
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:06:01.105
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:06:01.108
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-11-22 02:06:01.120
+!MESSAGE >> document/didClose
+!SESSION 2021-12-09 02:10:18.024 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=13.0.2
+java.vendor=Oracle Corporation
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/mod3sty/.config/coc/extensions/coc-java-data/jdt_ws_78d12c02caf130d0137892bb41951224
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-12-09 02:10:18.632
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:18.959
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.094
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.116
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.121
+!MESSAGE Initializing Java Language Server 0.69.0.202101210441
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.135
+!MESSAGE Static Commands: []
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.136
+!MESSAGE Non-Static Commands: [java.edit.organizeImports, java.project.refreshDiagnostics, java.project.import, java.project.removeFromSourcePath, java.project.listSourcePaths, java.project.provideSemanticTokens, java.project.resolveStackTraceLocation, java.project.getAll, java.project.isTestFile, java.project.getClasspaths, java.project.getSemanticTokensLegend, java.project.getSettings, java.project.updateSourceAttachment, java.project.resolveSourceAttachment, java.project.addToSourcePath]
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.151
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2021-12-09 02:10:19.598
+!MESSAGE Failed to read package name from file:/home/mod3sty/Scripts/sandbox/fathomd/skewness.java
+!STACK 0
+java.io.FileNotFoundException: /home/mod3sty/Scripts/sandbox/fathomd/skewness.java (No such file or directory)
+	at java.base/java.io.FileInputStream.open0(Native Method)
+	at java.base/java.io.FileInputStream.open(FileInputStream.java:213)
+	at java.base/java.io.FileInputStream.<init>(FileInputStream.java:155)
+	at com.google.common.io.Files$FileByteSource.openStream(Files.java:130)
+	at com.google.common.io.Files$FileByteSource.read(Files.java:154)
+	at com.google.common.io.ByteSource$AsCharSource.read(ByteSource.java:470)
+	at com.google.common.io.Files.toString(Files.java:254)
+	at org.eclipse.jdt.ls.core.internal.JDTUtils.getPackageName(JDTUtils.java:291)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:195)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:173)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.getPackageName(InvisibleProjectImporter.java:163)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.loadInvisibleProject(InvisibleProjectImporter.java:104)
+	at org.eclipse.jdt.ls.core.internal.managers.InvisibleProjectImporter.importToWorkspace(InvisibleProjectImporter.java:87)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.importProjects(ProjectsManager.java:115)
+	at org.eclipse.jdt.ls.core.internal.managers.ProjectsManager.initializeProjects(ProjectsManager.java:104)
+	at org.eclipse.jdt.ls.core.internal.handlers.InitHandler$1.runInWorkspace(InitHandler.java:195)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.603
+!MESSAGE Workspace initialized in 465ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.656
+!MESSAGE >> initialization job finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.661
+!MESSAGE >> workspace/didChangeConfiguration
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.668
+!MESSAGE >> New configuration: {java={enabled=true, jdt={ls={vmargs=-noverify -Xmx1G -XX:+UseG1GC -XX:+UseStringDeduplication}}, errors={incompleteClasspath={severity=warning}}, configuration={checkProjectSettingsExclusions=true, updateBuildConfiguration=interactive, runtimes=[]}, trace={server=off}, import={gradle={enabled=true, wrapper={enabled=true}, offline={enabled=false}}, maven={enabled=true}, exclusions=[**/node_modules/**, **/.metadata/**, **/archetype-resources/**, **/META-INF/maven/**]}, maven={updateSnapshots=false, downloadSources=false}, referencesCodeLens={enabled=false}, signatureHelp={enabled=false}, implementationsCodeLens={enabled=false}, format={enabled=true, comments={enabled=true}, onType={enabled=true, fixComment={enabled=true}}}, saveActions={organizeImports=false}, project={referencedLibraries=[lib/**/*.jar], resourceFilters=[node_modules, .git]}, autobuild={enabled=true}, maxConcurrentBuilds=1.0, completion={maxResults=0.0, enabled=true, overwrite=true, guessMethodArguments=false, favoriteStaticMembers=[org.junit.Assert.*, org.junit.Assume.*, org.junit.jupiter.api.Assertions.*, org.junit.jupiter.api.Assumptions.*, org.junit.jupiter.api.DynamicContainer.*, org.junit.jupiter.api.DynamicTest.*, org.mockito.Mockito.*, org.mockito.ArgumentMatchers.*, org.mockito.Answers.*], filteredTypes=[java.awt.*, com.sun.*], importOrder=[java, javax, com, org]}, progressReports={enabled=true}, foldingRange={enabled=true}, codeGeneration={hashCodeEquals={useJava7Objects=false, useInstanceof=false}, useBlocks=false, generateComments=false, toString={template=${object.className} [${member.name()}=${member.value}, ${otherMembers}], codeStyle=STRING_CONCATENATION, skipNullValues=false, listArrayContents=true, limitElements=0.0}}, selectionRange={enabled=true}, sources={organizeImports={starThreshold=99.0, staticStarThreshold=99.0}}, templates={fileHeader=[], typeComment=[]}, references={includeAccessors=true}}}
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.669
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.878
+!MESSAGE >> Updating classpath for project fathomd_d0c6dd9f
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:19.895
+!MESSAGE Reconciled 0. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.057
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.057
+!MESSAGE 0 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.060
+!MESSAGE Validated 1. Took 163 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.081
+!MESSAGE >> build jobs finished
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.085
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.087
+!MESSAGE >> registerFeature 'workspace/didChangeWatchedFiles'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.088
+!MESSAGE >> watchers registered
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.246
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.453
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.492
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.493
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.493
+!MESSAGE Validated 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:20.510
+!MESSAGE >> registerWatchers'
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:22.109
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:22.563
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:22.717
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:23.172
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:23.297
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:23.303
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:23.437
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:23.701
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:23.704
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:23.707
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:24.111
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:24.598
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:24.599
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:24.599
+!MESSAGE Validated 1. Took 38 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:24.973
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.010
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.012
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.026
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.028
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.030
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.096
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.481
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.947
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.949
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.950
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:25.950
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:26.344
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:26.346
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:26.354
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:26.701
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:27.105
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:27.311
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:27.313
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:27.507
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:27.635
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:28.089
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:28.380
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:28.383
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:28.395
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:28.786
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:29.209
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:29.213
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:29.214
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:29.214
+!MESSAGE Validated 1. Took 27 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:29.669
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:30.094
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:30.094
+!MESSAGE 5 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:30.094
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:31.556
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:31.559
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:31.566
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:32.010
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:32.151
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:32.153
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:32.160
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:32.605
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:32.641
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:33.095
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:33.517
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:33.517
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:33.517
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:33.810
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:34.263
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:34.734
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:34.734
+!MESSAGE 5 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:34.735
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:36.661
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:36.663
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:36.668
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:36.954
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:36.957
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:36.962
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:37.060
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:37.065
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:37.408
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:37.437
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:37.438
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:37.444
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:37.841
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:38.312
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:38.312
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:38.312
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:39.936
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:39.938
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:40.342
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:40.541
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:40.761
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:40.762
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:40.762
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:41.034
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:41.444
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:41.747
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:42.200
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:42.518
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:42.972
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.442
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.443
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.443
+!MESSAGE Validated 1. Took 20 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.535
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.537
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.543
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.649
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.651
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.658
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.815
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.817
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:43.822
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.007
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.011
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.016
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.265
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.267
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.271
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.670
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.814
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.985
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:44.987
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:45.308
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:45.391
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:45.718
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:45.720
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:45.750
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:46.124
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:46.390
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:46.544
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:46.544
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:46.544
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:46.580
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:46.778
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.231
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.373
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.375
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.422
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.541
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.542
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.576
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.946
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:47.964
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:48.385
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:48.689
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:48.691
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:49.093
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:49.377
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:49.397
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:49.400
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:49.464
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:49.801
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:50.150
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:50.152
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:50.158
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:50.472
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:50.529
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:50.751
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:51.203
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:51.664
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:51.664
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:51.665
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:51.689
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:51.691
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:52.143
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:52.387
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:52.758
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:52.759
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:52.760
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:53.211
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:53.674
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:53.674
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:53.674
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:53.677
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:54.003
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:54.406
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:54.424
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:54.425
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:54.428
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:54.769
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:55.172
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:55.389
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:55.841
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:56.303
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:56.303
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:56.312
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:57.788
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:57.789
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:57.792
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:58.241
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:58.358
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:58.761
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:58.925
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:58.926
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:58.928
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:59.328
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:59.790
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:59.790
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:59.791
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:59.892
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:59.893
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:10:59.895
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:00.295
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:00.598
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:01.000
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:01.411
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:01.411
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:01.411
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:01.463
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:01.866
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:02.141
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:02.142
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:02.162
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:02.544
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:02.825
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:03.228
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:03.638
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:03.639
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:03.639
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:03.983
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:03.984
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:04.187
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:04.431
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:04.833
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:05.297
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:05.297
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:05.298
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:05.311
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:05.615
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:06.067
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:06.286
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:06.689
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:07.161
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:07.161
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:07.161
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:07.426
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:07.878
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:08.123
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:08.527
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:08.994
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:08.994
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:08.994
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:09.586
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.039
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.456
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.456
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.457
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.669
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.670
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.676
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.817
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.819
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:10.824
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:11.270
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:11.522
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:11.952
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:11.954
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:11.956
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:12.356
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:12.488
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:12.891
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:13.357
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:13.357
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:13.357
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:13.911
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:13.913
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:13.964
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.365
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.382
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.383
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.387
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.785
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.832
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.833
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:14.834
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:15.064
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:15.468
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:15.933
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:15.933
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:15.934
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:16.543
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:16.545
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:16.660
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:16.946
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:17.348
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:17.751
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.216
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.216
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.216
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.319
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.320
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.360
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.464
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:18.697
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:19.101
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:19.216
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:19.668
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:20.132
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:20.132
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:20.132
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:20.647
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:20.986
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:20.988
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:21.089
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:21.439
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:21.467
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:21.870
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:22.146
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:22.147
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:22.433
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:22.599
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:22.658
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:23.073
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:23.499
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:23.500
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:23.509
+!MESSAGE Validated 1. Took 34 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.113
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.114
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.289
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.566
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.721
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.723
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.843
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:24.947
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:25.350
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:25.369
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:25.643
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:25.644
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:25.694
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:25.999
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:26.452
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:26.871
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:26.871
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:26.871
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:27.203
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:27.656
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:28.072
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:28.072
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:28.072
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:28.940
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:28.941
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:28.969
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:29.308
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:29.393
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:29.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:29.740
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:29.742
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:29.748
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:30.144
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:30.500
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:30.533
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:30.611
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:31.015
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:31.138
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:31.541
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:31.957
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:31.957
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:31.957
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:46.790
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:47.191
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:47.602
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:47.602
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:47.602
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:47.734
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:48.136
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:48.514
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:48.515
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:48.734
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:48.944
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.006
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.408
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.816
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.816
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.816
+!MESSAGE Validated 1. Took 7 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.920
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.921
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:49.923
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:50.280
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:50.281
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:50.282
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:50.598
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:50.599
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:50.811
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.000
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.147
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.148
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.149
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.480
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.856
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.857
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:51.891
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:52.259
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:52.271
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:52.272
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:52.514
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:52.674
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:52.752
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:53.004
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:53.305
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:53.758
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:54.217
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:54.217
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:54.217
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:54.876
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:55.277
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:55.735
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:55.735
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:55.735
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:57.571
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:57.572
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:57.573
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:58.023
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:58.485
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:58.485
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:58.485
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:58.917
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:59.369
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:59.784
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:59.785
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:59.785
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:11:59.987
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:00.313
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:00.765
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:01.225
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:01.225
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:01.225
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:03.148
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:03.288
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:03.289
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:03.291
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:03.690
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:04.058
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:04.510
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:04.704
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:04.705
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:05.157
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:05.373
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:05.576
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:05.576
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:05.577
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:05.938
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:06.340
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:06.800
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:06.801
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:06.801
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:07.427
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:07.428
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:07.490
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:07.880
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:08.110
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:08.132
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:08.414
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:08.818
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:09.239
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:09.240
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:09.240
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:10.317
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:10.319
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:10.721
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:10.750
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:10.877
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:11.305
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:11.330
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:11.438
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:11.442
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:11.818
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:11.819
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:12.232
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:12.273
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:12.696
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:12.697
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:12.697
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:12.710
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:13.087
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:13.088
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:13.540
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.015
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.015
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.015
+!MESSAGE Validated 1. Took 25 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.257
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.267
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.694
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.915
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:14.939
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:15.071
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:15.074
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:15.076
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:15.529
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:15.754
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:15.755
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:16.207
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:16.481
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:16.504
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:16.506
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:16.558
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:16.772
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:17.181
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:17.182
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:17.223
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:17.584
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:17.751
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:18.155
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:18.455
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:18.456
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:18.516
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:18.858
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:19.112
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:19.565
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:19.874
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:20.327
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:20.763
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:20.763
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:20.763
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:22.148
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:22.600
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:22.689
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:23.141
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:23.606
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:23.606
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:23.607
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:26.155
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:26.607
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:27.022
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:27.022
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:27.022
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:29.510
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:29.512
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:29.914
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:30.383
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:30.383
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:30.383
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:32.885
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:32.909
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:32.911
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:32.911
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.053
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.054
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.055
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.057
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.076
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.421
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.445
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.622
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:33.623
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:34.026
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:34.152
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:34.553
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:35.016
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:35.017
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:35.017
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:37.504
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:37.621
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:38.023
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:38.434
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:38.435
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:38.468
+!MESSAGE Validated 1. Took 44 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:38.664
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:39.067
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:39.526
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:39.526
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:12:39.527
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:16.491
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:16.894
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:17.067
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:17.068
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:17.470
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:17.713
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:17.820
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:17.821
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:17.963
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:18.272
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:18.563
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:18.564
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:18.594
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:18.965
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:18.986
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.450
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.519
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.522
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.524
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.922
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.935
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.936
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:19.938
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.337
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.752
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.752
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.752
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.767
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.768
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.769
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.771
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.868
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:20.870
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.026
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.027
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.029
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.330
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.331
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.333
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.476
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.477
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.480
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.921
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.994
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.995
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:21.998
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:22.384
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:22.787
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:23.063
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:23.064
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:23.139
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:23.398
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:23.849
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:24.308
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:24.308
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:24.317
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:25.389
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:25.785
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:25.786
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:25.792
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:26.237
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:26.650
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:26.650
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:26.650
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:27.385
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:27.687
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:28.140
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:28.603
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:28.603
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:28.603
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:32.805
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:32.808
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:32.808
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:32.812
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:33.210
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:33.673
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:33.673
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:33.674
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:33.920
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:33.921
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:33.924
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:34.372
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:34.422
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:34.874
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:35.337
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:35.337
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:35.337
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:35.528
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:35.529
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:35.569
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:35.930
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.020
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.384
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.385
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.416
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.718
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.787
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.930
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:36.932
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:37.385
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:37.851
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:37.851
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:37.851
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:37.947
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:37.949
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:37.981
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:38.400
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:38.450
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:38.865
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:38.865
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:38.865
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:40.081
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:40.473
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:40.925
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:41.057
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:41.508
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:41.970
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:41.970
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:41.971
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:43.366
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:43.767
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:44.176
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:44.176
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:44.176
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:45.102
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:45.103
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:45.121
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:45.449
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:45.450
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:45.452
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:45.901
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:46.360
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:46.360
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:46.360
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:46.672
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:47.125
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:47.126
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:47.128
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:47.176
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:47.579
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:48.043
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:48.043
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:48.044
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:49.048
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:49.500
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:49.913
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:49.913
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:49.913
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:50.020
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:50.020
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:50.022
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:50.422
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:50.843
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:50.843
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:50.843
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:51.481
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:51.483
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:51.485
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:51.762
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:51.763
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:52.098
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:52.165
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:52.584
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:52.584
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:52.585
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:53.233
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:53.686
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.108
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.108
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.108
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.154
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.556
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.673
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.992
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.993
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:54.996
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:55.443
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:55.820
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:56.271
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:56.326
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:56.728
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:56.787
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:57.197
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:57.642
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:58.095
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:58.557
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:58.558
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:58.558
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:58.805
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:58.806
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:59.250
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:59.593
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:13:59.619
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:00.060
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:00.463
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:00.730
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:01.033
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:01.484
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:01.820
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:01.821
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:01.898
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:02.224
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:02.689
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:02.689
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:02.689
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:03.203
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:03.205
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:03.307
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:03.347
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:03.657
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:04.072
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:04.072
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:04.072
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:04.550
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:05.003
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:05.283
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:05.735
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.035
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.253
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.254
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.344
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.657
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.716
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.717
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.735
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.821
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.821
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:06.841
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:07.273
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:07.554
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:07.956
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.412
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.420
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.421
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.421
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.422
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.456
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.824
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:08.961
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:09.071
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:09.474
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:09.601
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:10.053
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:10.464
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:10.464
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:10.464
+!MESSAGE Validated 1. Took 10 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:11.158
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:11.160
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:11.179
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:11.561
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:11.971
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:11.971
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:11.971
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.008
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.460
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.744
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.745
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.753
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.847
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.848
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:12.855
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:13.300
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:13.470
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:13.898
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:14.307
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:14.308
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:14.709
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:14.748
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:14.865
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:14.889
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:15.268
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:15.383
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:15.835
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:16.294
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:16.294
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:16.294
+!MESSAGE Validated 1. Took 9 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:16.498
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:16.653
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:17.106
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:17.356
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:17.357
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:17.683
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:17.735
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:18.188
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:18.252
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:18.655
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.070
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.070
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.070
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.152
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.605
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.629
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.630
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:19.811
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:20.040
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:20.390
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:20.693
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:20.822
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:20.823
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:20.853
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:21.224
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:21.342
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:21.745
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:22.210
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:22.210
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:22.211
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:30.643
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:30.644
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:30.681
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.095
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.145
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.386
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.387
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.715
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.747
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.748
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:31.778
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:32.152
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:32.462
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:32.723
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:32.865
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:32.922
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:32.924
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:33.327
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:33.743
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:33.743
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:33.743
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.075
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.076
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.146
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.478
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.524
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.525
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.556
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:34.900
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:35.352
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:35.765
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:35.765
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 02:14:35.765
+!MESSAGE Validated 1. Took 12 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:01.412
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:01.438
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:01.891
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.373
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.373
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.373
+!MESSAGE Validated 1. Took 31 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.639
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.682
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.683
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.801
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:02.804
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:03.257
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:03.722
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:03.722
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:03.723
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:22.190
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:22.192
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:22.258
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:22.593
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:23.056
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:23.057
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:23.057
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:23.433
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:23.884
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:24.363
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:24.363
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:24.363
+!MESSAGE Validated 1. Took 28 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:24.897
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:25.142
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:25.566
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:26.034
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:26.034
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:26.034
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:27.248
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:27.608
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:28.061
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:28.525
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:28.525
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:28.526
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:41.136
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:41.137
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:41.321
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:41.537
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:41.990
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:42.042
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:42.445
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:42.912
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:42.912
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:42.913
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:43.067
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:43.172
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:43.173
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:43.177
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:43.574
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:44.041
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:44.041
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:44.041
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:44.192
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:44.644
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.108
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.109
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.109
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.141
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.142
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.309
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.544
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.669
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:45.671
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:46.121
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:46.358
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:46.364
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:46.766
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:47.228
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:47.228
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:47.237
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:47.330
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:47.781
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:48.087
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:48.088
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:48.089
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:48.540
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:48.904
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:49.356
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:49.818
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:49.818
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:37:49.818
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:12.624
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.082
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.189
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.191
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.200
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.592
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.593
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.594
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:13.994
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:14.398
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:14.833
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:15.020
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:15.020
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:15.023
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:15.472
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:15.935
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:15.935
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:15.935
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:16.446
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:16.884
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:16.968
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:16.968
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:17.110
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:17.370
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:17.640
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:18.021
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:18.385
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:18.386
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:18.565
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:18.787
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:18.910
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:19.313
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:19.772
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:19.772
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:19.772
+!MESSAGE Validated 1. Took 8 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:44.461
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:44.914
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:45.378
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:45.378
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:45.378
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:47.037
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:47.489
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:47.953
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:47.953
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:47.953
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:48.061
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:48.513
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:48.928
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:48.929
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:48.929
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:49.358
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:49.359
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:49.360
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:49.726
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:50.179
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:50.594
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:50.594
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:50.594
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:52.650
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.103
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.341
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.342
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.345
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.498
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.499
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.502
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:53.949
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:54.225
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:54.628
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:54.873
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:54.874
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:54.877
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:55.062
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:55.063
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:55.066
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:55.464
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:55.678
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:56.080
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:56.250
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:56.702
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:56.796
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:56.797
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:56.800
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:57.199
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:57.663
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:57.663
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:57.663
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:58.737
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:59.189
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:59.663
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:59.663
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:38:59.663
+!MESSAGE Validated 1. Took 23 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:00.278
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:00.731
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.146
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.146
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.146
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.296
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.297
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.298
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.398
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.399
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:01.749
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:02.162
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:02.162
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:02.163
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:02.881
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:02.883
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:03.120
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:03.284
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:03.748
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:03.748
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:03.748
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:05.084
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:05.535
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:05.893
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:06.344
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:06.760
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:06.760
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:06.760
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:06.940
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:07.342
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:07.805
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:07.806
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:07.811
+!MESSAGE Validated 1. Took 19 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:10.239
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:10.240
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:10.244
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:10.643
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:10.977
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:11.381
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:11.799
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:11.800
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:11.800
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:14.199
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:14.200
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:14.203
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:14.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:14.380
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:14.384
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:14.832
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:15.296
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:15.296
+!MESSAGE 5 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:15.297
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:15.376
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:15.828
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:16.131
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:16.467
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:16.870
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:16.943
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:16.944
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:16.945
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:17.346
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:17.462
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:17.463
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:17.703
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:17.915
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:18.245
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:18.685
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:19.137
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:19.329
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:19.330
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:19.731
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:20.087
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:20.108
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:20.561
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:21.032
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:21.032
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:21.032
+!MESSAGE Validated 1. Took 21 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:27.460
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:27.863
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:28.328
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:28.328
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:28.328
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:34.865
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:34.866
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:34.952
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:35.318
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:35.672
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.076
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.215
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.216
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.220
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.553
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.554
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.558
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.879
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.880
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:36.884
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:37.331
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:37.488
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:37.489
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:37.493
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:37.758
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:37.759
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:37.763
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:38.161
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:38.297
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:38.298
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:38.299
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:38.700
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:38.799
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:39.202
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:39.617
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:39.618
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:39.618
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:46.212
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:46.663
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:46.824
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:46.826
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:47.014
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:47.237
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:47.431
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:47.563
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:47.748
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:47.749
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:47.792
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:48.151
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:48.385
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:48.469
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:48.518
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:48.521
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:48.784
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:48.926
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.401
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.401
+!MESSAGE 5 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.402
+!MESSAGE Validated 1. Took 26 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.406
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.422
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.424
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.472
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.473
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.475
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.481
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.904
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:49.926
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:50.072
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:50.075
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:50.528
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:50.945
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:50.945
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:50.945
+!MESSAGE Validated 1. Took 16 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:52.731
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:52.732
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:52.780
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:53.086
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:53.301
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:53.469
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:53.872
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:54.340
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:54.341
+!MESSAGE 5 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:54.341
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:55.487
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:55.488
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:55.585
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:55.941
+!MESSAGE Reconciled 0. Took 3 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:56.035
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:56.440
+!MESSAGE Reconciled 0. Took 4 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:56.446
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:56.752
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:57.205
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:57.672
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:57.673
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:39:57.673
+!MESSAGE Validated 1. Took 18 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:03.891
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:04.342
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:04.759
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:04.759
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:04.760
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:10.929
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:11.381
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:11.843
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:11.843
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:11.843
+!MESSAGE Validated 1. Took 11 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:16.165
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:16.166
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:16.198
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:16.617
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:16.724
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:16.815
+!MESSAGE >> document/resolveCompletionItem
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:16.993
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:17.396
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:17.478
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:17.929
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:18.266
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:18.669
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:19.079
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:19.080
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:19.132
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:19.482
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:19.955
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:19.955
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:19.956
+!MESSAGE Validated 1. Took 24 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:20.159
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:20.160
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:20.199
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:20.562
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:21.027
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:21.027
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:21.027
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:21.393
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:21.796
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:22.212
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:22.212
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:22.212
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:22.697
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:23.150
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:23.609
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:23.609
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:23.609
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:23.621
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:24.074
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:24.489
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:24.489
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:24.489
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:24.925
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:25.328
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:25.744
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:25.744
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:25.744
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:29.643
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:29.644
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:29.886
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:30.033
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:30.435
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:30.651
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.014
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.015
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.054
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.467
+!MESSAGE Reconciled 0. Took 2 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.923
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.939
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.939
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:31.939
+!MESSAGE Validated 1. Took 22 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:32.391
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:32.813
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:32.813
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:32.813
+!MESSAGE Validated 1. Took 17 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:39.791
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:39.792
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:39.796
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:39.989
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:40.390
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:40.853
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:40.854
+!MESSAGE 4 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:40.854
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:41.523
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:41.524
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:41.575
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:41.731
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:42.182
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:42.645
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:42.645
+!MESSAGE 3 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:42.645
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:43.176
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:43.177
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:43.232
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:43.373
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:43.825
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:44.289
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:44.289
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:44.289
+!MESSAGE Validated 1. Took 14 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:44.459
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:44.460
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:44.490
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:44.678
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:45.080
+!MESSAGE Reconciled 0. Took 0 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:45.544
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:45.544
+!MESSAGE 2 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:45.544
+!MESSAGE Validated 1. Took 13 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:45.806
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:46.024
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:46.025
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:46.206
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:46.366
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:46.817
+!MESSAGE Reconciled 0. Took 1 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:47.281
+!MESSAGE begin problem for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:47.282
+!MESSAGE 1 problems reported for /skewness.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-09 22:40:47.282
+!MESSAGE Validated 1. Took 15 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-11 23:36:52.626
+!MESSAGE >> document/willSaveWaitUntil
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-11 23:36:52.660
+!MESSAGE >> document/didSave
+
+!ENTRY org.eclipse.jdt.ls.core 4 0 2021-12-11 23:36:52.675
+!MESSAGE Error while handling document save. URI: file:///home/mod3sty/Scripts/sandbox/fathomd/skewness.java
+!STACK 1
+Java Model Exception: Java Model Status [[Working copy] skewness.java [in <default> [in _ [in fathomd_d0c6dd9f]]] does not exist]
+	at org.eclipse.jdt.internal.core.JavaElement.newNotPresentException(JavaElement.java:573)
+	at org.eclipse.jdt.internal.core.Openable.getUnderlyingResource(Openable.java:358)
+	at org.eclipse.jdt.internal.core.CompilationUnit.getUnderlyingResource(CompilationUnit.java:979)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.handleSaved(BaseDocumentLifeCycleHandler.java:468)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler$7.run(BaseDocumentLifeCycleHandler.java:316)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.jdt.ls.core.internal.handlers.BaseDocumentLifeCycleHandler.didSave(BaseDocumentLifeCycleHandler.java:313)
+	at org.eclipse.jdt.ls.core.internal.handlers.JDTLanguageServer.didSave(JDTLanguageServer.java:769)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$null$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:152)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:220)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:187)
+	at org.eclipse.jdt.ls.core.internal.ParentProcessWatcher.lambda$0(ParentProcessWatcher.java:123)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:830)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2021-12-11 23:36:52.681
+!MESSAGE [Working copy] skewness.java [in <default> [in _ [in fathomd_d0c6dd9f]]] does not exist
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2021-12-11 23:36:52.685
+!MESSAGE >> document/didClose
